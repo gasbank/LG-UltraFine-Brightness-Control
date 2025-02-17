@@ -7,7 +7,7 @@ using namespace System::Windows::Forms;
 
 
 [STAThread]//leave this as is
-int main(array<String^>^ args) {
+int __stdcall WinMain(){//int main(array<String^>^ args) {
     Application::EnableVisualStyles();
     Application::SetCompatibleTextRenderingDefault(false);
     Application::Run(gcnew LGUltrafineBrightness::mainForm);
